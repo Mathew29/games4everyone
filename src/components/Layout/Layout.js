@@ -7,8 +7,9 @@ const Layout = ({children}) => {
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <header className={styles.header}>header</header>
 
       <main className={styles.main}>{children}</main>
 
