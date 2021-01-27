@@ -8,11 +8,12 @@ const Layout = ({children}) => {
       <Head>
         <title>Create Next App</title>
       </Head>
-
       <header className={styles.header}>header</header>
 
+      
+      <nav className={styles.nav}>nav</nav>
       <main className={styles.main}>{children}</main>
-
+      <aside className={styles.aside}>aside</aside>
       <footer className={styles.footer}>footer</footer>
     </div>
   );
