@@ -1,26 +1,33 @@
 import React from "react";
 import Head from "next/head";
+import Header from "../Header/Header";
 import styles from "./Layout.module.css";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Games4Everyone</title>
       </Head>
-      <header className={styles.header}>header</header>
+      <div className={styles.header}>
+        <Header />
+      </div>
 
-      
-      <nav className={styles.nav}>nav</nav>
+      <div className={styles.nav}>
+        <nav>nav</nav>
+      </div>
 
+      <div className={styles.main}>
+        <main>{children}</main>
+      </div>
 
-      <main className={styles.main}>{children}</main>
+      <div className={styles.aside}>
+        <aside>aside</aside>
+      </div>
 
-      
-      <aside className={styles.aside}>aside</aside>
-
-
-      <footer className={styles.footer}>footer</footer>
+      <div className={styles.footer}>
+        <footer>footer</footer>
+      </div>
     </div>
   );
 };
