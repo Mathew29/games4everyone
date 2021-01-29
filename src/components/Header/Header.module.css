@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    background-color: lightpink;
+    /* background-color: lightpink; */
     height: 100%;
     justify-content: space-around;
 }
