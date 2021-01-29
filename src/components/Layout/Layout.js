@@ -9,9 +9,9 @@ const Layout = ({ children }) => {
       <Head>
         <title>Games4Everyone</title>
       </Head>
-      <div className={styles.logo}>
+      {/* <div className={styles.logo}>
         <h1>logo</h1>
-      </div>
+      </div> */}
       <div className={styles.header}>
         <Header />
       </div>
